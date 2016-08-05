@@ -1,5 +1,3 @@
-// function getProducts () {
-
   addProducts = function() {
 
     Promise.all([
@@ -7,18 +5,31 @@
       $.getJSON("types.json"),
       $.getJSON("products.json")])
       .then(values => {
-      var categories = values[0];
-      var types = values[1];
-      var productArray = values[2]
-      var products = productArray.products
+      var categoriesArray = values[0];
+      var typesArray = values[1];
+      var productArray = values[2];
 
-      var selectorNumber = parseInt($("#mainSelector").val());
-      var stopNumber = selectorNumber + 2;
+      var categories = categoriesArray.categories;
+      var types = typesArray.types;
+      var products = productArray.products;
 
-      for(var i = selectorNumber; i <= stopNumber; i++){
-        console.log(i);
+      var productsNumber = parseInt($("#mainSelector").val());
+      var typeNumber = products[productsNumber].type;
+      var categoryNumber = types[typeNumber].category
+
+      $("#productContainer").append(`
+        <div class="categoryAndType">
+        Here are all our ${types[typeNumber].name} products, these are in the ${categories[categoryNumber].name} category <br>
+        ${types[typeNumber].name} : ${types[typeNumber].description}
+        </div
+        `)
+
+      var stopNumber = productsNumber + 2;
+
+      for(var i = productsNumber; i <= stopNumber; i++){
         $("#productContainer").append(`
           <div class="addedProduct col-md-3">
+
            ${products[i].name}  <br> ${products[i].description}
           </div>
         `)
