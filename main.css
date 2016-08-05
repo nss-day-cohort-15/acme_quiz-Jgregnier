@@ -1,0 +1,6 @@
+.addedProduct {
+  border: solid black 2px;
+  margin : 10px;
+  width: 30%;
+  display: inline-block;
+}
