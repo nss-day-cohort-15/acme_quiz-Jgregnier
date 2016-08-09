@@ -2,8 +2,8 @@
 <html>
 <head>
 	<title> Acme Explosives</title>
-	<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
-	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="main.css">
 </head>
 <body>
 <!-- NAV BAR  -->
@@ -11,25 +11,7 @@
     <label for="mainSelector"> Pick your favorite type of explosives to see our products! </label>
 
     <select class="selectpicker" name="mainSelector" id="mainSelector">
-
-      <optgroup label="Fireworks">
-        <option value="0"> Kid Friendly </option>
-        <option value="3"> Personal </option>
-        <option value="6"> Rock n Roll </option>
-      </optgroup>
-
-      <optgroup label="Demolition">
-        <option value="9"> Home Demolition </option>
-        <option value="12"> Construction Destruction </option>
-        <option value="15"> Crater Makers </option>
-      </optgroup>
-
-      <optgroup label="Really Big Boom">
-        <option value="18"> Really Big Boom </option>
-        <option value="21"> Really Really Big Boom </option>
-        <option value="24"> Really Really Really Big Boom </option>
-      </optgroup>
-
+<!-- Options inserted here from addoptions.js -->
     </select>
 
 
@@ -37,13 +19,13 @@
 
     <button id="clearProducts"> Clear </button>
   </div>
-<!-- PRODUCTS PAGE -->
-  <div class="container-inline  " id="productContainer">
-<!--     <div id="productRow">
-    </div> -->
+
+  <div class="container" id="productContainer">
+<!--Products added here-->
   </div>
 
-  <script src="/bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="addOptions.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
