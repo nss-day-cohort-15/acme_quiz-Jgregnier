@@ -1,0 +1,58 @@
+{
+    "types": [
+        {
+            "category": 0,
+            "id": 0,
+            "name": "Kid Friendly",
+            "description": "Fireworks deemed safe for children to use"
+        },
+        {
+            "category": 0,
+            "id": 1,
+            "name": "Personal",
+            "description": "Fireworks intended for recreational use during holiday celebrations"
+        },
+        {
+            "category": 0,
+            "id": 2,
+            "name": "Rock n Roll",
+            "description": "Set the sky on fire with these ladders of flame (Illegal in most states)"
+        },
+        {
+            "category": 1,
+            "id": 3,
+            "name": "Home-Demolition",
+            "description": "Used to demolish small structures on your property"
+        },
+        {
+            "category": 1,
+            "id": 4,
+            "name": "Construction destruction",
+            "description": "Explosives intended to destroy structures in a proffesional setting"
+        },
+        {
+            "category": 1,
+            "id": 5,
+            "name": "Crater Makers",
+            "description": "These explosives will wipe an old structure off the face of the earth"
+        },
+        {
+            "category": 2,
+            "id": 6,
+            "name": "Really Big Boom",
+            "description": "Big explosives used to blow stuff up, military use only"
+        },
+        {
+            "category": 2,
+            "id": 7,
+            "name": "Really Really Big Boom",
+            "description": "Even bigger explosives, also used to blow stuff up"
+        },
+        {
+            "category": 2,
+            "id": 8,
+            "name": "Really Really Really Big Boom",
+            "description": "Experimental booms under development by the government boom department"
+        }
+    ]
+}

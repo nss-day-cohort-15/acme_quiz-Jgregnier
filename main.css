@@ -1,0 +1,10 @@
+.addedProduct {
+  border: solid black 2px;
+  margin : 10px;
+  display: inline-block;
+}
+
+.categoryAndType {
+	margin: 10px;
+}
+

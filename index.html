@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Acme Explosives</title>
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<!-- NAV BAR  -->
+  <div class="container">
+    <label for="mainSelector"> Pick your favorite type of explosives to see our products! </label>
+
+    <select class="selectpicker" name="mainSelector" id="mainSelector">
+<!-- Options inserted here from addoptions.js -->
+    </select>
+
+
+    <button id="addProducts"> Search </button>
+
+    <button id="clearProducts"> Clear </button>
+  </div>
+
+  <div class="container" id="productContainer">
+<!--Products added here-->
+  </div>
+
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="addOptions.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
